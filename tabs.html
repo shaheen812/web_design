@@ -1,81 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabs</title>
     <link rel="stylesheet" href="/web_design/css/tab.css">
 </head>
+
 <body>
     <main class="main-container">
-    <div class="content">
+        <div class="content">
             <div class="btn">
-                .
-                <button class="button" onclick="openTab('tab1')">Tab1</button>
+                
+               
+                <button class="button" onclick="openTab('tab1')">tab1</button>
                 <button class="button" onclick="openTab('tab2')">tab2</button>
-                <button class="button" onclick="openTab('tab2')">tab3</button>
+                <button class="button" onclick="openTab('tab3')">tab3</button>
             </div>
 
             <h1>Heading Title</h1>
         </div>
-        
-    </div>
-    
-    <div class="card-container" id="tab1">
-        <div class="card">
-            <figure>
-                <img src="/web_design/img/milkshake-8323288_1280.jpg" alt="">
-            </figure>
+
         </div>
-        <div class="card">
-            <figure>
-                <img src="/web_design/img/milkshake-8323288_1280.jpg" alt="">
-            </figure>
-        </div>
-        <div class="card">
-            <figure>
-                <img src="/web_design/img/milkshake-8323288_1280.jpg" alt="">
-            </figure>
-        </div>
-        <div class="card">
-            <figure>
-                <img src="/web_design/img/milkshake-8323288_1280.jpg" alt="">
-            </figure>
+        <div class="card-container" id="tab1">
+            <div class="cards">
+                <div class="card">
+                    <img src="/web_design/img/yoga1.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/yoga2.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/yoga3.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/yoga4.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/girl-4731823_1280.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/wedi-8074671_1280.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/yoga2.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/yoga1.jpg" alt="">
+                </div>
+            </div>
+
         </div>
 
 
-        <div class="card-container" id="tab2" style="display: none;">
-            <div class="card">
-                <figure>
-                    <img src="/web_design/img/ai-generated-8673761_1280.jpg" alt="">
-                </figure>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="/web_design/img/automotive-7593064_1280.jpg" alt="">
-                </figure>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="/web_design/img/royal-gramma-basslet-8012082_1280.jpg" alt="">
-                </figure>
-            </div>
-            <div class="card">
-                <figure>
+        <div class="card-container" id="tab2">
+            <div class="cards">
+                <div class="card">
+                    <img src="/web_design/img/Home_Banner_Image.webp" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/cat-8436843_1280.jpg" alt="">
+                </div>
+                <div class="card">
                     <img src="/web_design/img/winter-7593872_1280.jpg" alt="">
-                </figure>
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/royal-gramma-basslet-8012082_1280.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/ai-generated-8673761_1280.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/automotive-7593064_1280.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/img2.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/milkshake-8323288_1280.jpg" alt="">
+                </div>
             </div>
+
+        </div>
+        <div class="card-container" id="tab3">
+            <div class="cards">
+                <div class="card">
+                    <img src="/web_design/img/img1.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/img3.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/img6.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/img5.jpg" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="/web_design/img/img5.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/img10.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/img9.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img src="/web_design/img/img3.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </main>
 
-<script>
-    function openTab(tabId) {
-    const tabs = document.querySelectorAll('.card-container');
-    for (let i = 0; i < tabs.length; i++) {
-        tabs[i].style.display = "none";
-    }
-    document.getElementById(tabId).style.display = "block";
-}
+    <script>
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.card-container');
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabId).style.display = "block";
+        }
 
-</script>
+    </script>
 </body>
+
 </html>

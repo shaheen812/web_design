@@ -48,19 +48,25 @@ body{
     text-transform: capitalize;
 }
 .card-container{
+    display: none;
+}
+.cards{
     padding-top: 45px;
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
     align-items: center;
-    /* flex: 1 1 auto; */
     justify-content: center;
-    
 }
-.card figure{
-    height: 289px;
-    width: 289px;
+.card {
+    height: 243px;
+    width: 275px;
+    border-radius: 8px;
+    overflow: hidden;
 }
-.card figure img{
+.card  img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
