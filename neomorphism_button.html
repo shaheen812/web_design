@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ebeef1;
+        }
+        button {
+    font-size: 26px;
+    border-radius: 45px;
+    font-weight: 500;
+    display: flex;
+    gap: 14px;
+    padding: 20px;
+    margin: 30px;
+    width: 242px;
+    background: #ebeef1;
+    cursor: pointer;
+    border: none;
+    color: #00a037;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+    align-items: center;
+    justify-content: center;
+}
+
+button.reject {
+    color: #ed0000;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button><ion-icon name="call-outline"></ion-icon> Accept</button>
+        <button class="reject"><ion-icon name="call-outline"></ion-icon> Reject</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
