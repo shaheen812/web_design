@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            gap: 3rem;
+            padding-top: 45px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer-content {
+            padding-left: 60px;
+        }
+
+        .outer-content h1 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 2rem;
+        }
+
+        .outer-content p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 0.9rem;
+            padding-top: 13px;
+            color: rgb(105, 104, 104);
+        }
+
+        .inner-col {
+            padding: 35px 142px 0 109px;
+        }
+
+        .icon {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 33px;
+        }
+
+        span {
+            height: 58px;
+            width: 58px;
+            border: 1px solid #e47e2b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon h1 {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 2rem;
+        }
+
+        .icon p {
+            font-size: 14px;
+            padding-top: 10px;
+            font-weight: 300;
+            color: rgb(105, 104, 104);
+        }
+
+        .img {
+            position: relative;
+        }
+
+        figure {
+            height: 300px;
+            width: 280px;
+            overflow: hidden;
+        }
+
+        figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .fig1 {
+            border: 15px solid rgb(255, 255, 255);
+            height: 200px;
+            width: 194px;
+            bottom: -37px;
+            right: 224px;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        svg {
+            color: #e47e2b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="outer-content">
+                <h1>Stay Strong, Stay Balanced, <br> Live Your Best Life!</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni delectus <br> error neque nam quasi
+                    cumque!</p>
+            </div>
+            <div class="inner-col">
+                <div class="icon">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M6.375 22v-1.283a6.75 6.75 0 0 0-.693-2.982l-.291-.592A8.7 8.7 0 0 1 4.5 13.31V8.19c0-.788.63-1.428 1.406-1.428c.777 0 1.407.64 1.407 1.428m7.5 13.81v-1.279c.002-1.143 1.195-1.725 2.171-2.294c1.116-.651 2.01-1.702 2.423-2.966c.271-.832-.48-1.555-1.378-1.555s-1.66.784-2.31 1.385a2 2 0 0 1-.277.217c-1.268.809-2.961-.164-2.961-1.602s1.693-2.411 2.961-1.603c.316.166.577.386.785.615c.473.52 1.096.988 1.81.988c.913 0 1.679-.737 1.408-1.585a5.28 5.28 0 0 0-5.042-3.652c-.997 0-1.466.282-1.466.282l2.145-5.004C15.457 3.018 14.785 2 13.796 2c-.526 0-1.007.302-1.243.78l-2.428 4.934m0 0l-.448.91m.448-.91V4.381c0-.789-.63-1.429-1.406-1.429c-.777 0-1.406.64-1.406 1.429v3.81m0 0v3.333"
+                                color="currentColor" />
+                        </svg> </span>
+                    <div class="content">
+                        <h1>Bend Your Mind, Inspire Yourself</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente <br> dolorum delectus sunt
+                            vero
+                            animi.</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 20.02q-.238 0-.478-.096q-.24-.095-.41-.286l-6.316-6.34q-.875-.875-1.336-1.971Q3 10.231 3 9.083Q3 6.93 4.348 5.427t3.31-1.504q1.026 0 1.974.427q.947.427 1.695 1.2l.673.712l.635-.673q.761-.812 1.718-1.239t1.964-.427q1.962 0 3.323 1.504T21 9.057q0 1.168-.463 2.264q-.464 1.096-1.333 1.971l-6.34 6.347q-.191.19-.408.285t-.456.095M13 8.5q.135 0 .244.058q.11.058.177.161l1.835 2.781h4.073q.348-.579.522-1.199t.155-1.243q-.031-1.725-1.093-2.924q-1.061-1.2-2.596-1.2q-.813 0-1.583.33q-.77.328-1.334.961l-.906.975q-.105.13-.228.18T12 7.429t-.275-.059t-.244-.17l-.906-.975q-.563-.633-1.33-.967q-.768-.335-1.587-.335q-1.535 0-2.596 1.205T4 9.058q0 .642.171 1.253t.5 1.189H9q.135 0 .235.058t.167.161l1.452 2.166l1.677-5.031q.061-.165.18-.26T13 8.5m.146 1.616l-1.677 5.03q-.061.166-.192.26t-.302.094q-.134 0-.234-.058t-.168-.161L8.719 12.5h-3.3l6.406 6.425q.05.05.088.063T12 19t.088-.012t.087-.063l6.4-6.425H15q-.134 0-.244-.067t-.183-.171z" />
+                        </svg>
+                    </span>
+                    <div class="content">
+                        <h1>Bend Your Mind, Inspire Yourself</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente <br> dolorum delectus sunt
+                            vero
+                            animi.</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path d="M2 9a10 10 0 1 0 20 0" />
+                                <path d="M12 19A10 10 0 0 1 22 9M2 9a10 10 0 0 1 10 10" />
+                                <path d="M12 4a9.7 9.7 0 0 1 2.99 7.5m-5.98 0A9.7 9.7 0 0 1 12 4" />
+                            </g>
+                        </svg> </span>
+                    <div class="content">
+                        <h1>Bend Your Mind, Inspire Yourself</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente <br> dolorum delectus sunt
+                            vero
+                            animi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <figure>
+                <img src="/woman-1284656_1280.jpg" alt="">
+            </figure>
+
+            <figure class="fig1">
+                <img src="woman-1840275_1280.jpg" alt="">
+            </figure>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ebe6e663;
+        }
+
+        header {
+            background-color: rgb(253 237 237);
+            width: 100%;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 45px;
+        }
+
+        .navigation ul {
+            /* justify-content: center */
+            display: flex;
+            gap: 43px;
+            list-style: none;
+            align-items: center;
+            padding: 16px 12px;
+            margin-left: 45px;
+        }
+
+        .navigation ul li {
+            display: block;
+        }
+
+        .navigation ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .button {
+            display: flex;
+            gap: 1.3rem;
+        }
+
+        .button .btn {
+            padding: 8px 18px;
+            border: none;
+            background-color: rgb(252, 209, 209);
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            /* transition: linear 2s ease-in-out; */
+            border: 2px solid rgb(235, 201, 201);
+            background-color: rgb(247, 217, 217);
+        }
+
+        .form-sec {
+            padding-top: 45px;
+            display: none;
+        }
+
+
+        .form {
+            display: flex;
+
+            flex-direction: column;
+            background-color: #fff;
+            padding: 24px;
+            gap: 0.9rem;
+            height: 400px;
+            width: 360px;
+            border-radius: 15px;
+        }
+
+        label {
+            color: rgb(252, 209, 209);
+            font-weight: 600;
+        }
+
+        .input-element {
+            line-height: 23px;
+        }
+
+        .input {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .input-element input {
+            padding: 8px 12px;
+            width: 100%;
+            outline: none;
+            border: 1px solid rgb(252, 209, 209);
+            border-radius: 5px;
+        }
+
+        .input-element textarea {
+            height: 85px;
+            width: 100%;
+            border-radius: 5px;
+            resize: none;
+            border: 1px solid rgb(252, 209, 209);
+
+            padding: 8px 12px;
+        }
+
+        .form-sec.active {
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+
+            <div class="button">
+                <button class="btn" onclick="openForm()">Sign up</button>
+                <button class="btn">Login</button>
+            </div>
+        </nav>
+    </header>
+    <div class="form-sec">
+        <div class="form">
+            <label class="name">Name</label>
+            <div class=" input-element input">
+                <input type="text" id="fname" placeholder="Enter your fisrt name">
+                <input type="text" id="lname" placeholder="Enter your Last name">
+            </div>
+
+            <label class="email">
+                Email </label>
+            <div class="input-element">
+                <input type="email" name="email" id="email" placeholder="Enter your Email Id">
+            </div>
+
+            <label class="number">
+                Number
+            </label>
+            <div class="input-element">
+                <input type="number" name="number" id="number" placeholder="Enter your Phone number">
+
+            </div>
+            <label class="note">
+                Message
+            </label>
+            <div class="input-element">
+                <textarea name="note" id="note" placeholder=" Type something here "></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            const form = document.querySelector('.form-sec');
+            form.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
