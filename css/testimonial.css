@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding-top: 45px;
+}
+
+.container .main-content {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    
+    padding-right: 870px;
+    padding-bottom: 74px;
+    
+}
+.container .main-content h2 {
+    font-size: 17px;
+    display: flex;
+    color: #cc0909;
+    align-items: center;
+}
+
+.container h2  svg{
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+}
+.card{
+        display: flex;
+        gap: 3rem;
+}
+.testimonial{
+    background: #94949454;
+    /* display: inline-block; */
+    padding: 24px 36px;
+    position: relative;
+    width: 583px;
+    height: 251px;
+}
+
+.testimonial p{
+  text-align: justify;
+  width: 521px;
+  margin-top: 44px;
+  line-height: 1.7rem;
+}
+
+.testimonial figure {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid red; 
+}
+.testimonial figure img {
+    width: 100%;
+    height: 100%; /* Ensure it takes the full height of the container */
+    object-fit: cover;
+    border: 1px solid blue; /* To see the image boundary */
+}
+
+.testimonial-card {
+    position: absolute;
+    top: -38px;
+    right: 25px;
+    height: 107px;
+    width: 234px;
+    background: black;
+    color: white;
+    display: flex;
+    gap: 0.8rem;
+    padding: 13px 27px;
+}
+.content h1{
+    font-size: 21px;
+}
+.content h3{
+    line-height: 2rem;
+    font-size: 16px;
+    color: #cc0909;
+}
